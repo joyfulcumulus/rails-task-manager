@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="w-50 border border-secondary p-3">
+    <h1><%= @task.title %></h1>
+    <p class="bg-light border border-secondary-subtle rounded p-3"><%= @task.details %></p>
+    <div class="<%= @task.completed ? "bg-success bg-opacity-25 p-3" : "bg-danger bg-opacity-25 p-3" %>" >
+      <input type="checkbox"
+        <%= "checked" if @task.completed %>
+        class="form-check-input"
+        id="task-checkbox"
+        disabled
+      >
+      <label class="form-check-label" for="task-checkbox">
+        <%= @task.completed ? "This task is completed" : "This task is not completed" %>
+      </label>
+    </div>
+
+
+    <div class="my-3">
+      <button class="btn btn-warning border border-secondary-subtle"><%= link_to "Edit this task", task_edit_path %></button>
+      <button class="btn btn-light border border-secondary-subtle"><%= link_to "Back to list", tasks_path %></button>
+    </div>
+  </div>
+</div>
