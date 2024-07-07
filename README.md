@@ -1,24 +1,10 @@
-# README
+# Task Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application allows the user to create a to-do list with the following features
+* view all to-do items
+* add items to list
+* delete items from list
+* edit items from list
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Screenshot of how application works
+![screenshot of application pages](task-manager.PNG)
